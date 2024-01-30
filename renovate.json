@@ -1,0 +1,11 @@
+{
+  "automerge": true,
+  "timezone": "Asia/Taipei",
+  "schedule": [
+    "before 2am"
+  ],
+  "automergeStrategy": "rebase",
+  "extends": [
+    "config:base"
+  ]
+}

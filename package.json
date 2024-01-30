@@ -1,0 +1,90 @@
+{
+  "name": "@010tech/gatsbyjs-boilerplate",
+  "private": true,
+  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "version": "1.0.2",
+  "repository": "git@github.com:010tech/gatsbyjs-boilerplate.git",
+  "contributors": [
+    {
+      "name": "DBB",
+      "email": "qeroer@gmail.com"
+    },
+    {
+      "name": "Pelic Hsu",
+      "email": "pelicwei@gmail.com"
+    },
+    {
+      "name": "Gary Lai",
+      "email": "garylai1990@gmail.com"
+    }
+  ],
+  "dependencies": {
+    "dotenv": "16.4.1",
+    "gatsby": "5.13.3",
+    "gatsby-image": "3.11.0",
+    "gatsby-plugin-config": "1.0.7",
+    "gatsby-plugin-manifest": "5.13.1",
+    "gatsby-plugin-next-seo": "1.11.0",
+    "gatsby-plugin-offline": "6.13.1",
+    "gatsby-plugin-postcss": "6.13.1",
+    "gatsby-plugin-react-helmet": "6.13.1",
+    "gatsby-plugin-robots-txt": "1.8.0",
+    "gatsby-plugin-sharp": "5.13.1",
+    "gatsby-plugin-sitemap": "6.13.1",
+    "gatsby-source-filesystem": "5.13.1",
+    "gatsby-transformer-sharp": "5.13.1",
+    "postcss": "8.4.33",
+    "prop-types": "15.8.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-helmet-async": "2.0.4"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "7.23.9",
+    "@commitlint/cli": "18.6.0",
+    "@commitlint/config-conventional": "18.6.0",
+    "commitizen": "4.3.0",
+    "conventional-github-releaser": "3.1.5",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "8.56.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-config-react-app": "7.0.1",
+    "eslint-import-resolver-alias": "1.1.2",
+    "eslint-plugin-import": "2.29.1",
+    "eslint-plugin-jsx-a11y": "6.8.0",
+    "eslint-plugin-prettier": "4.2.1",
+    "eslint-plugin-react": "7.33.2",
+    "eslint-plugin-react-hooks": "4.6.0",
+    "gatsby-plugin-eslint": "4.0.4",
+    "husky": "9.0.6",
+    "prettier": "2.8.8",
+    "prettier-plugin-tailwindcss": "0.4.1",
+    "standard-version": "9.5.0",
+    "tailwindcss": "3.4.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "lint": "eslint --ext .jsx,.js ./src/",
+    "release": "standard-version -s --no-verify",
+    "github-release": "conventional-github-releaser -p angular -r 0"
+  },
+  "bugs": {
+    "url": "https://github.com/010tech/gatsbyjs-boilerplate/issues"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+}
